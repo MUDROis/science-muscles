@@ -314,6 +314,177 @@
             border: 3px solid #2c3e50;
             box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
         }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .slide {
+                padding: 15px;
+                overflow-y: auto;
+            }
+
+            .sketch-container {
+                padding: 20px;
+                max-width: 100%;
+                transform: rotate(0deg);
+            }
+
+            .sketch-container::before {
+                display: none;
+            }
+
+            h1 {
+                font-size: 2em;
+                transform: rotate(0deg);
+                text-shadow: 2px 2px 0px #f39c12;
+            }
+
+            h2 {
+                font-size: 1.6em;
+                transform: rotate(0deg);
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .sketch-box {
+                padding: 15px;
+                transform: rotate(0deg) !important;
+            }
+
+            li {
+                font-size: 1.1em;
+                margin: 10px 0;
+                padding-left: 30px;
+            }
+
+            li::before {
+                font-size: 1.2em;
+            }
+
+            .icon {
+                font-size: 2em;
+            }
+
+            .muscle-diagram {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .arm-position {
+                margin: 5px 0;
+                padding: 15px;
+            }
+
+            .arm-emoji {
+                font-size: 3em;
+            }
+
+            .true-false-box {
+                padding: 12px;
+                transform: rotate(0deg) !important;
+            }
+
+            .check-btn {
+                font-size: 1.2em;
+                padding: 12px 30px;
+            }
+
+            .navigation {
+                bottom: 15px;
+                gap: 10px;
+            }
+
+            .navigation button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+
+            .slide-number {
+                top: 10px;
+                right: 15px;
+                font-size: 1.2em;
+                padding: 8px 15px;
+            }
+
+            .key-fact {
+                font-size: 1.1em;
+                padding: 12px;
+                transform: rotate(0deg);
+            }
+
+            img {
+                max-width: 100% !important;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide {
+                padding: 10px;
+            }
+
+            .sketch-container {
+                padding: 15px;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            h3 {
+                font-size: 1.1em;
+            }
+
+            li {
+                font-size: 1em;
+                padding-left: 25px;
+            }
+
+            .icon {
+                font-size: 1.5em;
+            }
+
+            .arm-emoji {
+                font-size: 2.5em;
+            }
+
+            .navigation {
+                flex-direction: column;
+                width: 80%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .navigation button {
+                width: 100%;
+            }
+
+            .slide-number {
+                font-size: 1em;
+                padding: 6px 12px;
+            }
+
+            .key-fact {
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            .check-btn {
+                font-size: 1.1em;
+                padding: 10px 25px;
+            }
+        }
     </style>
 </head>
 <body>
